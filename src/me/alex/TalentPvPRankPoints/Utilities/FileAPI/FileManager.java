@@ -17,7 +17,7 @@ public class FileManager {
 
     private RankPointsPlugin plugin;
     private ArrayList<PluginFile> files;
-    private final List<String> preMadeFiles = Arrays.asList("config.yml", "messages.yml");
+    private final List<String> preMadeFiles = Arrays.asList("config.yml", "messages.yml", "data.yml", "ranks.yml");
 
     public FileManager(RankPointsPlugin rpp) {
         this.plugin = rpp;
@@ -91,12 +91,6 @@ public class FileManager {
             if (f.getName().equalsIgnoreCase(name)) {
                 return f;
             }
-            if (f.getName().split(".")[0].equalsIgnoreCase(name)) {
-                return f;
-            }
-            if (f.getName().split(".")[0].equalsIgnoreCase(name.split(".")[0])) {
-                return f;
-            }
 
 
         }
@@ -124,15 +118,37 @@ public class FileManager {
 
     }
 
-    public FileManager addPluginFile(PluginFile pf)
+    public void addPluginFile(PluginFile pf)
     {
         if(isPluginFile(pf))
         {
-            return this;
+            return;
         }
         files.add(pf);
-        return this;
 
+
+    }
+
+    public PluginFile getPluginFile(String name)
+    {
+        for(PluginFile pf : getPluginFiles())
+        {
+            if(pf.getName().equalsIgnoreCase(name))
+            {
+                return pf;
+            }
+        }
+        return null;
+    }
+
+    public void deletePluginFile(PluginFile pf)
+    {
+        if(isPluginFile(pf))
+        {
+            this.files.remove(pf);
+            pf.delete();
+
+        }
 
     }
 

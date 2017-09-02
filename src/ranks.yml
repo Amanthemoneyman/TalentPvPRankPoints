@@ -1,0 +1,29 @@
+BaseRank: "Member" #The rank that all players start with
+'1':
+  Name: "Warrior"
+  UpgradePrice: 3000
+  RankVoucherCmd: ''
+'2':
+  Name: "King"
+  UpgradePrice: 6000
+  RankVoucherCmd: ''
+'3':
+  Name: "Mystic"
+  UpgradePrice: 8000
+  RankVoucherCmd: ''
+'4':
+  Name: "Ghoul"
+  UpgradePrice: 10000
+  RankVoucherCmd: ''
+'5':
+  Name: "Overlord"
+  UpgradePrice: 15000
+  RankVoucherCmd: ''
+'6':
+  Name: "Ghost"
+  UpgradePrice: 20000
+  RankVoucherCmd: ''
+'7':
+  Name: "Cursed"
+  UpgradePrice: 30000 #The amount of rank points to upgrade
+  RankVoucherCmd: '' #The cmd used to give the rank voucher(For Custom)

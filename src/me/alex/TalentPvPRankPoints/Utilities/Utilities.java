@@ -31,6 +31,12 @@ public class Utilities {
 
     }
 
+    public static void info(String str) {
+        Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', "&8[&bRP Info&8]: " + str));
+
+
+    }
+
     public static void debug(String str) {
         Bukkit.getServer().getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', "&8[&b&RP &4&lDebug&r&8]: " + str));
     }

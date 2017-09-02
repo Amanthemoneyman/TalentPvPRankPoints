@@ -81,5 +81,4 @@ public class Messages {
 
         loaded = true;
     }
-
 }
