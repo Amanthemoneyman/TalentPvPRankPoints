@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="TalentPvPRankPoints">
+    <output-path>$USER_HOME$/Desktop/Coding/Server Jars/Server/spigot.18.8/plugins</output-path>
+    <root id="archive" name="TalentPvPRankPoints.jar">
+      <element id="module-output" name="TalentPvPRankPoints" />
+    </root>
+  </artifact>
+</component>

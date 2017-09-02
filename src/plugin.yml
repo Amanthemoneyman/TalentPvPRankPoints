@@ -1,0 +1,5 @@
+name: TalentPvPRankPoints
+version: BETA
+author: Alex (Amanthemoneyman)
+main: me.alex.TalentPvPRankPoints.RankPointsPlugin
+commands:
